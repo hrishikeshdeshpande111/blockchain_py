@@ -131,16 +131,16 @@ class Blockchain:
         blocks = [str(block) for block in self.chain]
         return "\n".join(blocks)
     
-# blockchain = Blockchain()
+blockchain = Blockchain()
 
-# # Add some transactions
-# blockchain.new_transaction(sender='Hrishikesh', recipient='Ninad', amount=1)
-# blockchain.new_transaction(sender='Prasanna', recipient='Hrishikesh', amount=123)
+# Add some transactions
+blockchain.new_transaction(sender='Hrishikesh', recipient='Ninad', amount=1)
+blockchain.new_transaction(sender='Prasanna', recipient='Hrishikesh', amount=123)
 
-# # Mine a block
-# last_block = blockchain.last_block
-# proof = blockchain.proof_of_work(last_block)
-# blockchain.new_block(proof)
+# Mine a block
+last_block = blockchain.last_block
+proof = blockchain.proof_of_work(last_block)
+blockchain.new_block(proof)
 
-# # Print the blockchain
-# print(blockchain)
+# Print the blockchain
+print(blockchain)
