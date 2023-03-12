@@ -8,7 +8,7 @@ Python 3,
 hashlib,
 json,
 time,
-requests,
+requests.
 
 **Usage** :
 To use this program, simply run the Python script blockchain.py using Python 3. The program will create a new blockchain and add some transactions. It will then mine a new block and print the entire blockchain.
